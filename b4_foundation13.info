@@ -3,6 +3,7 @@ description = Custom sub-theme, inherits from the Foundation base theme
 read <a href="http://foundation.zurb.com/docs/index.php">framework documentation</a>
 screenshot = images/screenshot.png
 ; Monika was here, trying to put the files in the right the place for use with GitHub.
+; Now Monika is editing the local file for GitHub
 
 core = 7.x
 engine = phptemplate
