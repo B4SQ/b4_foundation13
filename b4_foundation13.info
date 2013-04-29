@@ -30,6 +30,9 @@ base theme = zurb_foundation
 ; Base theme specific CSS
 stylesheets[all][] = css/custom.css
 
+; e-mail theme specific CSS by Sir Scottington
+stylesheets[all][] = css/mail.css
+
 ; An empty JavaScript file ready to be used just uncomment and add JavaScript
 ; scripts[] = js/scripts.js
 
