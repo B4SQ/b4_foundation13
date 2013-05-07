@@ -18,19 +18,24 @@
 <?php if (!empty($page['header'])): ?>
   <div class="row">
     <div class="twelve columns">
-      <?php print render($page['header']);?>
+      <div id="sticky-links"><?php print render($page['header']);?></div>
     </div>
   </div>
 <?php endif; ?>
-
-
+<?php // Insert branding ?>
+<div class="row">
+    <div class="twelve columns">
+<div id="branding" class="hide-for-small"><?php print '<img src="'.base_path() . path_to_theme() .'/images/branding.png">';  ?></div>
+<div id="branding-mobile" class="show-for-small"><?php print '<img src="'.base_path() . path_to_theme() .'/images/mobile/m_branding.png">';  ?></div>
+</div>
+</div>
 
 <?php // Insert 4 Things Navigation for Desktop and Tablet ?>
 <div class="row">
   <div class="twelve columns hide-for-small">
     <?php // DESKTOP - TABLET START ?>
     <div id="four-things-dt">
-      <?php include("torn-complete-nav.svg"); ?>
+      <?php print '<img src="'.base_path() . path_to_theme() .'/images/img_primary-navigation.svg">';  ?>
     </div>
     <?php // DESKTOP - TABLET STOP ?>
   </div>
@@ -40,17 +45,6 @@
 
 
 
-<?php if ($main_menu_links || !empty($page['navigation'])): ?>
-  <div class="row">
-    <nav class="twelve columns show-for-small">
-      <?php if (!empty($page['navigation'])): ?>
-        <?php print render($page['navigation']);?>
-      <?php else: ?>
-        <?php print $main_menu_links; ?>
-      <?php endif; ?>
-    </nav>
-  </div>
-<?php endif; ?>
 
 <?php if ($site_slogan): ?>
   <div class="row">
@@ -98,6 +92,23 @@
     </div>
   <?php endif; ?>
 </div>
+
+
+
+<?php if ($main_menu_links || !empty($page['navigation'])): ?>
+  <div class="row">
+    <nav class="twelve columns show-for-small">
+      <?php if (!empty($page['navigation'])): ?>
+        <?php print render($page['navigation']);?>
+      <?php else: ?>
+        <?php print $main_menu_links; ?>
+      <?php endif; ?>
+    </nav>
+  </div>
+<?php endif; ?>
+
+
+
 <?php if (!empty($page['footer_first']) || !empty($page['footer_middle']) || !empty($page['footer_last'])): ?>
   <footer class="row">
     <?php if (!empty($page['footer_first'])): ?>
