@@ -3,6 +3,12 @@ body {
   /*	color: #f00; */
   background-color: #FFF; }
 
+#content-wrapper {
+  border: #f00 thin solid;
+  -moz-box-shadow: 3px 3px 4px #000;
+  -webkit-box-shadow: 3px 3px 4px #000;
+  box-shadow: 3px 3px 4px #000; }
+
 /*********************************
 *   All Displays or "Desktop"    *
 **********************************/

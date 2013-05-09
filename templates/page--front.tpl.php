@@ -15,6 +15,8 @@
   <?php endif; ?>
 </div>
 
+<div id="content-wrapper"><?php // Content warapper defines the edges of the entire content space with a drop shadow or similar effect. ?>
+
 <?php if (!empty($page['header'])): ?>
   <div class="row">
     <div class="twelve columns">
@@ -35,7 +37,8 @@
   <div class="twelve columns hide-for-small">
     <?php // DESKTOP - TABLET START ?>
     <div id="four-things-dt">
-      <?php print '<img src="'.base_path() . path_to_theme() .'/images/img_primary-navigation.svg">';  ?>
+        <object><?php include(path_to_theme()."/images/img_primary-navigation.svg");  ?>
+      </object>
     </div>
     <?php // DESKTOP - TABLET STOP ?>
   </div>
@@ -128,6 +131,7 @@
     <?php endif; ?>
   </footer>
 <?php endif; ?>
+</div><?php //end of content wrapper ?>
 <div class="bottom-bar panel">
   <div class="row">
     <div class="twelve columns">

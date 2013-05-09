@@ -18,22 +18,18 @@
 <?php if (!empty($page['header'])): ?>
   <div class="row">
     <div class="twelve columns">
-      <?php print render($page['header']);?>
+      <div id="sticky-links"><?php print render($page['header']);?></div>
     </div>
   </div>
 <?php endif; ?>
+<?php // Insert page identity ?>
+<div class="row">
+    <div class="twelve columns">
+<div id="branding" class="hide-for-small"><?php print '<img src="'.base_path() . path_to_theme() .'/images/page-identity.svg">';  ?></div>
+<div id="branding-mobile" class="show-for-small"><?php print '<img src="'.base_path() . path_to_theme() .'/images/mobile/m_page-identity.svg">';  ?></div>
+</div>
+</div>
 
-<?php if ($main_menu_links || !empty($page['navigation'])): ?>
-  <div class="row">
-    <nav class="twelve columns">
-      <?php if (!empty($page['navigation'])): ?>
-        <?php print render($page['navigation']);?>
-      <?php else: ?>
-        <?php print $main_menu_links; ?>
-      <?php endif; ?>
-    </nav>
-  </div>
-<?php endif; ?>
 
 <?php if ($site_slogan): ?>
   <div class="row">
