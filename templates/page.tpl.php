@@ -22,11 +22,21 @@
     </div>
   </div>
 <?php endif; ?>
-<?php // Insert page identity ?>
+<?php //Insert logo over atmospheric images ?>
 <div class="row">
     <div class="twelve columns">
-<div id="branding" class="hide-for-small"><?php print '<img src="'.base_path() . path_to_theme() .'/images/page-identity.svg">';  ?></div>
-<div id="branding-mobile" class="show-for-small"><?php print '<img src="'.base_path() . path_to_theme() .'/images/mobile/m_page-identity.svg">';  ?></div>
+<div id="atmosphere-logo"><?php print '<img src="'.base_path() . path_to_theme() .'/images/atmosphere-logo.png" width="100%">';  ?></div>
+</div>
+</div>
+
+
+<?php // Insert page identity and "the tear" ?>
+<div class="row">
+    <div class="twelve columns">
+<div id="page-deco" class="hide-for-small"><object><?php include(path_to_theme()."/images/page-deco.svg");  ?>
+      </object></div>
+<div id="page-id-mobile" class="show-for-small"><object><?php include(path_to_theme()."/images/mobile/m_page-identity.svg");  ?>
+      </object></div>
 </div>
 </div>
 
@@ -40,7 +50,7 @@
 <?php endif; ?>
 <div class="row">
   <div id="main" class="<?php print $main_grid; ?> columns">
-    <?php if ($breadcrumb): print $breadcrumb; endif; ?>
+    <?php // if ($breadcrumb): print $breadcrumb; endif; ?>
     <?php if ($messages): print $messages; endif; ?>
     <?php if (!empty($page['help'])): print render($page['help']); endif; ?>
     <?php if (!empty($page['highlighted'])): ?>
@@ -51,7 +61,8 @@
     <a id="main-content"></a>
     <?php if ($title && !$is_front): ?>
       <?php print render($title_prefix); ?>
-      <h1 id="page-title" class="title"><?php print $title; ?></h1>
+      <?php // hiding the title here to include it in the SVG, if that helps positioning. Reconfigre Apache for PHP in XML ?>
+      <!--h1 id="page-title" class="title"><?php // print $title; ?></h1-->
       <?php print render($title_suffix); ?>
     <?php endif; ?>
 

@@ -1,4 +1,6 @@
-/* Mix-ins */
+/**************
+*   MIXINS    *
+***************/
 @mixin orbitRadius {
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
@@ -11,9 +13,26 @@
 	border-radius: 0px; /* future proofing */
 	-khtml-border-radius: 0px; /* for old Konqueror browsers */
 }
+/*****************
+*   VARIABLES    *
+******************/
+/*Rows */ $accentColor13: #F00;
+
+/*Circles*/ $accentColor14: #0F0;
+
+/*Paths*/ $accentColor15: #00F;
+
+/*I'm New*/ $accentColor16: #F0F;
+/***************************
+*   ALL SCREEN DISPLAYS    *
+****************************/
 body {
 	/*	color: #f00; */
 	background-color: #FFF;
+}
+h2.pane-title, h2.atmosphere-id {
+	display: none;
+	visibility: hidden;
 }
 #content-wrapper {
 	border: #f00 thin solid;
@@ -21,22 +40,45 @@ body {
 	-webkit-box-shadow: 3px 3px 4px #000;
 	box-shadow: 3px 3px 4px #000;
 }
-/*********************************
-*   All Displays or "Desktop"    *
-**********************************/
-/* Primary navigation and decoration for Desktop & Tablet */
+.page-taxonomy-term-13 h2, .page-taxonomy-term-13 .page-title-background /*Rows */ {
+color: $accentColor13;
+fill: $accentColor13;
+}
+.page-taxonomy-term-14 h2, .page-taxonomy-term-14 .page-title-background /*Circles*/ {
+color: $accentColor14;
+fill: $accentColor14;
+}
+.page-taxonomy-term-15 h2, .page-taxonomy-term-15 .page-title-background /*Paths*/ {
+color: $accentColor15;
+fill: $accentColor15;
+}
+.page-taxonomy-term-16 h2, .page-taxonomy-term-16 .page-title-background /*I'm New*/ {
+color: $accentColor16;
+fill: $accentColor16;
+}
+
 #sticky-links {
 	background-color: #000;
 	color: #FFF;
 	height: 45px;
 	overflow: hidden;
 }
-#branding {
+#atmospheric-images {
+	position: relative;
+	top: -464px;
+	z-index: -10;
+}
+#page-deco svg {
+	position: relative;
+	top: -90px;
+	z-index: 10;
+}
+#page-title {
 }
 img.field-orbit-image {
 @include orbitRadius;
 }
-footer.row {
+footer.row, footer.row h2 {
 	background-color: #000;
 	color: #FFF;
 }
@@ -72,7 +114,4 @@ body {
 @media only screen and (min-width: 1441px) {
 body {
 }
-}
-#atmospheric {
-	position: relative;
 }
