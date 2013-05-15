@@ -96,6 +96,34 @@ img.field-orbit-image {
   -khtml-border-radius: 10px;
   /* for old Konqueror browsers */ }
 
+.views-field-field-category, .views-field-field-ministry-tags {
+  display: inline;
+  margin: -5px 0 20px 0; }
+
+.tax-tag-cat a {
+  background: #000;
+  color: #FFF;
+  display: inline;
+  font-size: .9em;
+  padding: 4px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  /* future proofing */
+  -khtml-border-radius: 3px;
+  /* for old Konqueror browsers */ }
+
+.tax-tag-min a {
+  background: #000;
+  color: #FFF;
+  padding: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  /* future proofing */
+  -khtml-border-radius: 3px;
+  /* for old Konqueror browsers */ }
+
 footer.row, footer.row h2 {
   background-color: #000;
   color: #FFF; }

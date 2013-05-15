@@ -38,8 +38,10 @@ orbitRadiusMobile {
 /* 6th Grade */ $accentColor29: #66bf75;
 /* Jr. High */ $accentColor30: #66bf75;
 /* High School */ $accentColor31: #66bf75;
-/* Camp */ $accentColor32: #040707; $overrideColor32: #c32627;
-/* Holidays */ $accentColor33: #fff200; $overrideColor33: #16ac9c;
+/* Camp */ $accentColor32: #040707;
+$overrideColor32: #c32627;
+/* Holidays */ $accentColor33: #fff200;
+$overrideColor33: #16ac9c;
 /* International Ministries */ $accentColor34: #a62e2c;
 /* Local Outreach */ $accentColor35: #a62e2c;
 /* Global Outreach */ $accentColor36: #a62e2c;
@@ -50,6 +52,7 @@ orbitRadiusMobile {
 /***************************
 *   ALL SCREEN DISPLAYS    *
 ****************************/
+
 
 
 body { /*	color: #f00; */
@@ -69,23 +72,23 @@ h2.pane-title, h2.atmosphere-id {
 }
 
 .page-taxonomy-term-13 h2, .page-taxonomy-term-13 .page-title-background /*Rows */ {
-	color: $accentColor13;
-	fill: $accentColor13;
+ 	color: $accentColor13;
+ 	fill: $accentColor13;
 }
 
 .page-taxonomy-term-14 h2, .page-taxonomy-term-14 .page-title-background /*Circles*/ {
-	color: $accentColor14;
-	fill: $accentColor14;
+ 	color: $accentColor14;
+ 	fill: $accentColor14;
 }
 
 .page-taxonomy-term-15 h2, .page-taxonomy-term-15 .page-title-background /*Paths*/ {
-	color: $accentColor15;
-	fill: $accentColor15;
+ 	color: $accentColor15;
+ 	fill: $accentColor15;
 }
 
 .page-taxonomy-term-16 h2, .page-taxonomy-term-16 .page-title-background /*I'm New*/ {
-	color: $accentColor16;
-	fill: $accentColor16;
+ 	color: $accentColor16;
+ 	fill: $accentColor16;
 }
 
 #sticky-links {
@@ -102,8 +105,8 @@ h2.pane-title, h2.atmosphere-id {
 }
 
 #page-deco {
-
 }
+
 #page-deco svg /* the entire tear and the circle */ {
 	position: relative;
 	top: -60px;
@@ -121,7 +124,38 @@ h1#page-title {
 }
 
 img.field-orbit-image {
-	@include orbitRadius;
+ 	@include orbitRadius;
+}
+
+.views-field-field-category, .views-field-field-ministry-tags {
+  display: inline;
+  margin: -5px 0 20px 0;
+}
+
+.tax-tag-cat a {
+	background: #000;
+	color: #FFF;
+	display: inline;
+	font-size: .9em;
+	padding: 4px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	/* future proofing */
+	-khtml-border-radius: 3px;
+	/* for old Konqueror browsers */
+}
+
+.tax-tag-min a {
+	background: #000;
+	color: #FFF;
+	padding: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	/* future proofing */
+	-khtml-border-radius: 3px;
+	/* for old Konqueror browsers */
 }
 
 footer.row, footer.row h2 {
