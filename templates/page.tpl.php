@@ -14,7 +14,7 @@
     </div>
   <?php endif; ?>
 </div>
-
+<div id="content-wrapper" class="row"><?php // Content warapper defines the edges of the entire content space with a drop shadow or similar effect. ?>
 <?php if (!empty($page['header'])): ?>
   <div class="row">
     <div class="twelve columns">
@@ -27,17 +27,15 @@
     <div class="twelve columns">
 <div id="atmosphere-logo"><?php print '<img src="'.base_path() . path_to_theme() .'/images/atmosphere-logo.png" width="100%">';  ?></div>
 </div>
-</div>
-
-
 <?php // Insert page identity and "the tear" ?>
-<div class="row">
     <div class="twelve columns">
 <div id="page-deco" class="hide-for-small"><object><?php include(path_to_theme()."/images/page-deco.svg");  ?>
       </object></div>
 <div id="page-id-mobile" class="show-for-small"><object><?php include(path_to_theme()."/images/mobile/m_page-identity.svg");  ?>
       </object></div>
 </div>
+
+
 </div>
 
 
@@ -107,6 +105,7 @@
     <?php endif; ?>
   </footer>
 <?php endif; ?>
+</div><?php //end of content wrapper ?>
 <div class="bottom-bar panel">
   <div class="row">
     <div class="twelve columns">

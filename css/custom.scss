@@ -1,13 +1,15 @@
 /**************
 *   MIXINS    *
 ***************/
-@mixin orbitRadius {
+@mixin 
+orbitRadius {
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px; /* future proofing */
 	-khtml-border-radius: 10px; /* for old Konqueror browsers */
 }
-@mixin orbitRadiusMobile {
+@mixin 
+orbitRadiusMobile {
 	-moz-border-radius: 0px;
 	-webkit-border-radius: 0px;
 	border-radius: 0px; /* future proofing */
@@ -23,38 +25,46 @@
 /*Paths*/ $accentColor15: #00F;
 
 /*I'm New*/ $accentColor16: #F0F;
+
 /***************************
 *   ALL SCREEN DISPLAYS    *
 ****************************/
-body {
-	/*	color: #f00; */
+
+
+body { /*	color: #f00; */
 	background-color: #FFF;
 }
+
 h2.pane-title, h2.atmosphere-id {
 	display: none;
 	visibility: hidden;
 }
+
 #content-wrapper {
-	border: #f00 thin solid;
-	-moz-box-shadow: 3px 3px 4px #000;
-	-webkit-box-shadow: 3px 3px 4px #000;
-	box-shadow: 3px 3px 4px #000;
+	-moz-box-shadow: 6px 0px 10px -7px #333, -6px 0px 10px -7px #333;
+	-webkit-box-shadow: 6px 0px 10px -7px #333, -6px 0px 10px -7px #333;
+	box-shadow: 6px 0px 10px -7px #333, -6px 0px 10px -7px #333;
+	position: relative;
 }
+
 .page-taxonomy-term-13 h2, .page-taxonomy-term-13 .page-title-background /*Rows */ {
-color: $accentColor13;
-fill: $accentColor13;
+	color: $accentColor13;
+	fill: $accentColor13;
 }
+
 .page-taxonomy-term-14 h2, .page-taxonomy-term-14 .page-title-background /*Circles*/ {
-color: $accentColor14;
-fill: $accentColor14;
+	color: $accentColor14;
+	fill: $accentColor14;
 }
+
 .page-taxonomy-term-15 h2, .page-taxonomy-term-15 .page-title-background /*Paths*/ {
-color: $accentColor15;
-fill: $accentColor15;
+	color: $accentColor15;
+	fill: $accentColor15;
 }
+
 .page-taxonomy-term-16 h2, .page-taxonomy-term-16 .page-title-background /*I'm New*/ {
-color: $accentColor16;
-fill: $accentColor16;
+	color: $accentColor16;
+	fill: $accentColor16;
 }
 
 #sticky-links {
@@ -63,21 +73,36 @@ fill: $accentColor16;
 	height: 45px;
 	overflow: hidden;
 }
+
 #atmospheric-images {
 	position: relative;
-	top: -464px;
+	top: -528px;
 	z-index: -10;
 }
-#page-deco svg {
+
+#page-deco {
+
+}
+#page-deco svg /* the entire tear and the circle */ {
 	position: relative;
-	top: -90px;
-	z-index: 10;
+	top: -40px;
+	z-index: -5;
 }
-#page-title {
+
+.page-title-background /* just the decorative circle */ {
+	display: inline-block;
 }
+
+h1#page-title {
+	color: #CCC;
+	display: inline-block;
+	vertical-align: middle;
+}
+
 img.field-orbit-image {
-@include orbitRadius;
+	@include orbitRadius;
 }
+
 footer.row, footer.row h2 {
 	background-color: #000;
 	color: #FFF;
@@ -89,11 +114,13 @@ footer.row, footer.row h2 {
 *   Small display    *
 **********************/
 @media only screen and (max-width: 767px) {
+
 body {
 	margin: 0;
 }
+
 img.field-orbit-image {
-@include orbitRadiusMobile;
+	@include orbitRadiusMobile;
 }
 }
 
@@ -103,6 +130,7 @@ img.field-orbit-image {
 *   Medium display    *
 **********************/
 @media only screen and (max-width: 1279px) and (min-width: 768px) {
+
 body {
 }
 }
@@ -112,6 +140,7 @@ body {
 *   Very Large display    *
 **************************/
 @media only screen and (min-width: 1441px) {
+
 body {
 }
 }

@@ -20,10 +20,10 @@ h2.pane-title, h2.atmosphere-id {
   visibility: hidden; }
 
 #content-wrapper {
-  border: #f00 thin solid;
-  -moz-box-shadow: 3px 3px 4px #000;
-  -webkit-box-shadow: 3px 3px 4px #000;
-  box-shadow: 3px 3px 4px #000; }
+  -moz-box-shadow: 6px 0px 10px -7px #333333, -6px 0px 10px -7px #333333;
+  -webkit-box-shadow: 6px 0px 10px -7px #333333, -6px 0px 10px -7px #333333;
+  box-shadow: 6px 0px 10px -7px #333333, -6px 0px 10px -7px #333333;
+  position: relative; }
 
 .page-taxonomy-term-13 h2, .page-taxonomy-term-13 .page-title-background {
   color: red;
@@ -49,13 +49,21 @@ h2.pane-title, h2.atmosphere-id {
 
 #atmospheric-images {
   position: relative;
-  top: -464px;
+  top: -528px;
   z-index: -10; }
 
 #page-deco svg {
   position: relative;
-  top: -90px;
-  z-index: 10; }
+  top: -40px;
+  z-index: -5; }
+
+.page-title-background {
+  display: inline-block; }
+
+h1#page-title {
+  color: #CCC;
+  display: inline-block;
+  vertical-align: middle; }
 
 img.field-orbit-image {
   -moz-border-radius: 10px;
