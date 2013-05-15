@@ -18,13 +18,34 @@ orbitRadiusMobile {
 /*****************
 *   VARIABLES    *
 ******************/
-/*Rows */ $accentColor13: #F00;
+/* Rows */ $accentColor13: #fcb822;
+/* Circles */ $accentColor14: #22b24c;
+/* Paths */ $accentColor15: #a62e2c;
+/* I'm New */ $accentColor16: #287588;
 
-/*Circles*/ $accentColor14: #0F0;
-
-/*Paths*/ $accentColor15: #00F;
-
-/*I'm New*/ $accentColor16: #F0F;
+/* LifeGroups */ $accentColor17: #24a292;
+/* Men */ $accentColor18: #1f83b6;
+/* Women */ $accentColor19: #ed126f;
+/* Young Adults */ $accentColor20: #6ec9bd;
+/* Senior Ministries */$accentColor21: #f17a20;
+/* Healing & Wholeness */ $accentColor22: #714099;
+/* All Children */ $accentColor23: #f15a44;
+/* Nursery */ $accentColor24: #f15a44;
+/* Early Childhood */ $accentColor25: #f15a44;
+/* 1st&2nd */ $accentColor26: #f15a44;
+/* 3rd-5th */ $accentColor27: #f15a44;
+/* All Youth */ $accentColor28: #66bf75;
+/* 6th Grade */ $accentColor29: #66bf75;
+/* Jr. High */ $accentColor30: #66bf75;
+/* High School */ $accentColor31: #66bf75;
+/* Camp */ $accentColor32: #040707; $overrideColor32: #c32627;
+/* Holidays */ $accentColor33: #fff200; $overrideColor33: #16ac9c;
+/* International Ministries */ $accentColor34: #a62e2c;
+/* Local Outreach */ $accentColor35: #a62e2c;
+/* Global Outreach */ $accentColor36: #a62e2c;
+/* New to B4 */ $accentColor37: #287588;
+/* New Christian */ $accentColor38: #287588;
+/* Unassigned */ $accentColor39: #000000;
 
 /***************************
 *   ALL SCREEN DISPLAYS    *
@@ -85,7 +106,7 @@ h2.pane-title, h2.atmosphere-id {
 }
 #page-deco svg /* the entire tear and the circle */ {
 	position: relative;
-	top: -40px;
+	top: -60px;
 	z-index: -5;
 }
 

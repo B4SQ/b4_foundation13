@@ -4,10 +4,33 @@
 /*****************
 *   VARIABLES    *
 ******************/
-/*Rows */
-/*Circles*/
-/*Paths*/
-/*I'm New*/
+/* Rows */
+/* Circles */
+/* Paths */
+/* I'm New */
+/* LifeGroups */
+/* Men */
+/* Women */
+/* Young Adults */
+/* Senior Ministries */
+/* Healing & Wholeness */
+/* All Children */
+/* Nursery */
+/* Early Childhood */
+/* 1st&2nd */
+/* 3rd-5th */
+/* All Youth */
+/* 6th Grade */
+/* Jr. High */
+/* High School */
+/* Camp */
+/* Holidays */
+/* International Ministries */
+/* Local Outreach */
+/* Global Outreach */
+/* New to B4 */
+/* New Christian */
+/* Unassigned */
 /***************************
 *   ALL SCREEN DISPLAYS    *
 ****************************/
@@ -26,20 +49,20 @@ h2.pane-title, h2.atmosphere-id {
   position: relative; }
 
 .page-taxonomy-term-13 h2, .page-taxonomy-term-13 .page-title-background {
-  color: red;
-  fill: red; }
+  color: #fcb822;
+  fill: #fcb822; }
 
 .page-taxonomy-term-14 h2, .page-taxonomy-term-14 .page-title-background {
-  color: lime;
-  fill: lime; }
+  color: #22b24c;
+  fill: #22b24c; }
 
 .page-taxonomy-term-15 h2, .page-taxonomy-term-15 .page-title-background {
-  color: blue;
-  fill: blue; }
+  color: #a62e2c;
+  fill: #a62e2c; }
 
 .page-taxonomy-term-16 h2, .page-taxonomy-term-16 .page-title-background {
-  color: magenta;
-  fill: magenta; }
+  color: #287588;
+  fill: #287588; }
 
 #sticky-links {
   background-color: #000;
@@ -54,7 +77,7 @@ h2.pane-title, h2.atmosphere-id {
 
 #page-deco svg {
   position: relative;
-  top: -40px;
+  top: -60px;
   z-index: -5; }
 
 .page-title-background {
