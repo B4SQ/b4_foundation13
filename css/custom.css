@@ -71,8 +71,8 @@ h2.pane-title, h2.atmosphere-id {
   overflow: hidden; }
 
 #atmospheric-images {
-  position: relative;
-  top: -528px;
+  /*position: relative;
+  top: -528px;*/
   z-index: -10; }
 
 #page-deco svg {
@@ -88,6 +88,10 @@ h1#page-title {
   display: inline-block;
   vertical-align: middle; }
 
+.hidden-title h2.node-title, .hidden-title .node-readmore {
+  display: none;
+  visibility: hidden; }
+
 img.field-orbit-image {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -100,29 +104,9 @@ img.field-orbit-image {
   display: inline;
   margin: -5px 0 20px 0; }
 
-.tax-tag-cat a {
-  background: #000;
-  color: #FFF;
+.tax-tag-cat a, .tax-tag-min a {
   display: inline;
-  font-size: .9em;
-  padding: 4px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  /* future proofing */
-  -khtml-border-radius: 3px;
-  /* for old Konqueror browsers */ }
-
-.tax-tag-min a {
-  background: #000;
-  color: #FFF;
-  padding: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  /* future proofing */
-  -khtml-border-radius: 3px;
-  /* for old Konqueror browsers */ }
+  margin: 0 5px 0 0; }
 
 footer.row, footer.row h2 {
   background-color: #000;

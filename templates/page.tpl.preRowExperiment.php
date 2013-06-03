@@ -14,9 +14,7 @@
     </div>
   <?php endif; ?>
 </div>
-
 <div id="content-wrapper" class="row"><?php // Content warapper defines the edges of the entire content space with a drop shadow or similar effect. ?>
-
 <?php if (!empty($page['header'])): ?>
   <div class="row">
     <div class="twelve columns">
@@ -24,29 +22,23 @@
     </div>
   </div>
 <?php endif; ?>
-<?php // Insert branding ?>
+<?php //Insert logo over atmospheric images ?>
 <div class="row">
     <div class="twelve columns">
-<div id="branding" class="hide-for-small"><?php print '<img src="'.base_path() . path_to_theme() .'/images/branding.png">';  ?></div>
-<div id="branding-mobile" class="show-for-small"><?php print '<img src="'.base_path() . path_to_theme() .'/images/mobile/m_branding.png">';  ?></div>
+<div id="atmosphere-logo"><?php print '<img src="'.base_path() . path_to_theme() .'/images/atmosphere-logo.png" width="100%">';  ?></div>
 </div>
 </div>
 
-<?php // Insert 4 Things Navigation for Desktop and Tablet ?>
+
+<?php // Insert page identity and "the tear" ?>
 <div class="row">
-  <div class="twelve columns hide-for-small">
-    <?php // DESKTOP - TABLET START ?>
-    <div id="four-things-dt">
-        <object><?php include(path_to_theme()."/images/img_primary-navigation-r3.svg");  ?>
-      </object>
-    </div>
-    <?php // DESKTOP - TABLET STOP ?>
-  </div>
+    <div class="twelve columns">
+<div id="page-deco" class="hide-for-small"><object><?php include(path_to_theme()."/images/page-deco.svg");  ?>
+      </object></div>
+<div id="page-id-mobile" class="show-for-small"><object><?php include(path_to_theme()."/images/mobile/m_page-identity.svg");  ?>
+      </object></div>
 </div>
-<?php // End 4 Things Navigation for Desktop and Tablet ?>
-
-
-
+</div>
 
 
 <?php if ($site_slogan): ?>
@@ -58,7 +50,7 @@
 <?php endif; ?>
 <div class="row">
   <div id="main" class="<?php print $main_grid; ?> columns">
-    <?php if ($breadcrumb): print $breadcrumb; endif; ?>
+    <?php // if ($breadcrumb): print $breadcrumb; endif; ?>
     <?php if ($messages): print $messages; endif; ?>
     <?php if (!empty($page['help'])): print render($page['help']); endif; ?>
     <?php if (!empty($page['highlighted'])): ?>
@@ -69,7 +61,8 @@
     <a id="main-content"></a>
     <?php if ($title && !$is_front): ?>
       <?php print render($title_prefix); ?>
-      <h1 id="page-title" class="title"><?php print $title; ?></h1>
+      <?php // hiding the title here to include it in the SVG, if that helps positioning. Reconfigre Apache for PHP in XML ?>
+      <!--h1 id="page-title" class="title"><?php // print $title; ?></h1-->
       <?php print render($title_suffix); ?>
     <?php endif; ?>
 
@@ -95,23 +88,6 @@
     </div>
   <?php endif; ?>
 </div>
-
-
-
-<?php if ($main_menu_links || !empty($page['navigation'])): ?>
-  <div class="row">
-    <nav class="twelve columns show-for-small">
-      <?php if (!empty($page['navigation'])): ?>
-        <?php print render($page['navigation']);?>
-      <?php else: ?>
-        <?php print $main_menu_links; ?>
-      <?php endif; ?>
-    </nav>
-  </div>
-<?php endif; ?>
-
-
-
 <?php if (!empty($page['footer_first']) || !empty($page['footer_middle']) || !empty($page['footer_last'])): ?>
   <footer class="row">
     <?php if (!empty($page['footer_first'])): ?>

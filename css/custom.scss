@@ -53,8 +53,6 @@ $overrideColor33: #16ac9c;
 *   ALL SCREEN DISPLAYS    *
 ****************************/
 
-
-
 body { /*	color: #f00; */
 	background-color: #FFF;
 }
@@ -99,8 +97,8 @@ h2.pane-title, h2.atmosphere-id {
 }
 
 #atmospheric-images {
-	position: relative;
-	top: -528px;
+	/*position: relative;
+	top: -528px;*/
 	z-index: -10;
 }
 
@@ -122,40 +120,21 @@ h1#page-title {
 	display: inline-block;
 	vertical-align: middle;
 }
-
+.hidden-title h2.node-title, .hidden-title .node-readmore {
+	display: none; 
+	visibility: hidden;
+}
 img.field-orbit-image {
  	@include orbitRadius;
 }
 
 .views-field-field-category, .views-field-field-ministry-tags {
-  display: inline;
-  margin: -5px 0 20px 0;
-}
-
-.tax-tag-cat a {
-	background: #000;
-	color: #FFF;
 	display: inline;
-	font-size: .9em;
-	padding: 4px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
-	/* future proofing */
-	-khtml-border-radius: 3px;
-	/* for old Konqueror browsers */
+	margin: -5px 0 20px 0;
 }
-
-.tax-tag-min a {
-	background: #000;
-	color: #FFF;
-	padding: 3px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
-	/* future proofing */
-	-khtml-border-radius: 3px;
-	/* for old Konqueror browsers */
+.tax-tag-cat a, .tax-tag-min a {
+	display: inline;
+	margin: 0 5px 0 0;
 }
 
 footer.row, footer.row h2 {
