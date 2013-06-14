@@ -42,33 +42,112 @@ h2.pane-title, h2.atmosphere-id {
   display: none;
   visibility: hidden; }
 
+div.radius img {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px; }
+
 #content-wrapper {
   -moz-box-shadow: 6px 0px 10px -7px #333333, -6px 0px 10px -7px #333333;
   -webkit-box-shadow: 6px 0px 10px -7px #333333, -6px 0px 10px -7px #333333;
   box-shadow: 6px 0px 10px -7px #333333, -6px 0px 10px -7px #333333;
   position: relative; }
 
+.button {
+  border: 1px solid #000;
+  margin: 0 3px; }
+
 .page-taxonomy-term-13 h2, .page-taxonomy-term-13 .page-title-background {
-  color: #fcb822;
+  color: #000;
   fill: #fcb822; }
 
+.page-taxonomy-term-13 a {
+  color: #666666; }
+
+.page-taxonomy-term-13 .button, .page-taxonomy-term-13 li.button {
+  background: none repeat scroll 0 0 #666666;
+  color: #fff; }
+
+.page-taxonomy-term-13 .button, .page-taxonomy-term-13 li.button a {
+  color: #fff; }
+
+.page-taxonomy-term-13 li.button:hover, li.button a:hover, a:hover, a:active {
+  background: none repeat scroll 0 0 #fcb822;
+  color: #fff; }
+
 .page-taxonomy-term-14 h2, .page-taxonomy-term-14 .page-title-background {
-  color: #22b24c;
+  color: #000;
   fill: #22b24c; }
 
+.page-taxonomy-term-14 a {
+  color: #666666; }
+
+.page-taxonomy-term-14 .button, .page-taxonomy-term-14 li.button {
+  background: none repeat scroll 0 0 #666666;
+  color: #fff; }
+
+.page-taxonomy-term-14 .button, .page-taxonomy-term-14 li.button a {
+  color: #fff; }
+
+.page-taxonomy-term-14 li.button:hover, li.button a:hover, a:hover, a:active {
+  background: none repeat scroll 0 0 #22b24c;
+  color: #fff; }
+
 .page-taxonomy-term-15 h2, .page-taxonomy-term-15 .page-title-background {
-  color: #a62e2c;
+  color: #000;
   fill: #a62e2c; }
 
+.page-taxonomy-term-15 a {
+  color: #666666; }
+
+.page-taxonomy-term-15 .button, .page-taxonomy-term-15 li.button {
+  background: none repeat scroll 0 0 #666666;
+  color: #fff; }
+
+.page-taxonomy-term-15 .button, .page-taxonomy-term-15 li.button a {
+  color: #fff; }
+
+.page-taxonomy-term-15 li.button:hover, li.button a:hover, a:hover, a:active {
+  background: none repeat scroll 0 0 #a62e2c;
+  color: #fff; }
+
 .page-taxonomy-term-16 h2, .page-taxonomy-term-16 .page-title-background {
-  color: #287588;
+  color: #000;
   fill: #287588; }
+
+.page-taxonomy-term-16 a {
+  color: #666666; }
+
+.page-taxonomy-term-16 .button, .page-taxonomy-term-16 li.button {
+  background: none repeat scroll 0 0 #666666;
+  color: #fff; }
+
+.page-taxonomy-term-16 .button, .page-taxonomy-term-16 li.button a {
+  color: #fff; }
+
+.page-taxonomy-term-16 li.button:hover, li.button a:hover, a:hover, a:active {
+  background: none repeat scroll 0 0 #287588;
+  color: #fff; }
 
 #sticky-links {
   background-color: #000;
   color: #FFF;
   height: 45px;
   overflow: hidden; }
+
+#sticky-links div.block div.view div.view-content ul.no-bullet li.views-row-first {
+  padding: 0 0 0 10px; }
+
+#sticky-links div.block div.view div.view-content ul.no-bullet li.views-row {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle; }
+
+#sticky-links div.block div.view div.view-content ul.no-bullet li.views-row-last {
+  padding: 0 10px 0 0; }
 
 #atmospheric-images {
   /*position: relative;

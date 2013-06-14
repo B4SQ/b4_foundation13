@@ -18,36 +18,34 @@ orbitRadiusMobile {
 /*****************
 *   VARIABLES    *
 ******************/
-/* Rows */ $accentColor13: #fcb822;
-/* Circles */ $accentColor14: #22b24c;
-/* Paths */ $accentColor15: #a62e2c;
-/* I'm New */ $accentColor16: #287588;
+/* Rows */ $accentColor13: #fcb822; $linkColor13: #666;
+/* Circles */ $accentColor14: #22b24c; $linkColor14: #666;
+/* Paths */ $accentColor15: #a62e2c; $linkColor15: #666;
+/* I'm New */ $accentColor16: #287588; $linkColor16: #666;
 
-/* LifeGroups */ $accentColor17: #24a292;
-/* Men */ $accentColor18: #1f83b6;
-/* Women */ $accentColor19: #ed126f;
-/* Young Adults */ $accentColor20: #6ec9bd;
-/* Senior Ministries */$accentColor21: #f17a20;
-/* Healing & Wholeness */ $accentColor22: #714099;
-/* All Children */ $accentColor23: #f15a44;
-/* Nursery */ $accentColor24: #f15a44;
-/* Early Childhood */ $accentColor25: #f15a44;
-/* 1st&2nd */ $accentColor26: #f15a44;
-/* 3rd-5th */ $accentColor27: #f15a44;
-/* All Youth */ $accentColor28: #66bf75;
-/* 6th Grade */ $accentColor29: #66bf75;
-/* Jr. High */ $accentColor30: #66bf75;
-/* High School */ $accentColor31: #66bf75;
-/* Camp */ $accentColor32: #040707;
-$overrideColor32: #c32627;
-/* Holidays */ $accentColor33: #fff200;
-$overrideColor33: #16ac9c;
-/* International Ministries */ $accentColor34: #a62e2c;
-/* Local Outreach */ $accentColor35: #a62e2c;
-/* Global Outreach */ $accentColor36: #a62e2c;
-/* New to B4 */ $accentColor37: #287588;
-/* New Christian */ $accentColor38: #287588;
-/* Unassigned */ $accentColor39: #000000;
+/* LifeGroups */ $accentColor17: #24a292; $linkColor17: #666;
+/* Men */ $accentColor18: #1f83b6; $linkColor18: #666;
+/* Women */ $accentColor19: #ed126f; $linkColor19: #666;
+/* Young Adults */ $accentColor20: #6ec9bd; $linkColor20: #666;
+/* Senior Ministries */$accentColor21: #f17a20; $linkColor21: #666;
+/* Healing & Wholeness */ $accentColor22: #714099; $linkColor22: #666;
+/* All Children */ $accentColor23: #f15a44; $linkColor23: #666;
+/* Nursery */ $accentColor24: #f15a44; $linkColor24: #666;
+/* Early Childhood */ $accentColor25: #f15a44; $linkColor25: #666;
+/* 1st&2nd */ $accentColor26: #f15a44; $linkColor26: #666;
+/* 3rd-5th */ $accentColor27: #f15a44; $linkColor27: #666;
+/* All Youth */ $accentColor28: #66bf75; $linkColor28: #666;
+/* 6th Grade */ $accentColor29: #66bf75; $linkColor29: #666;
+/* Jr. High */ $accentColor30: #66bf75; $linkColor30: #666;
+/* High School */ $accentColor31: #66bf75; $linkColor31: #666;
+/* Camp */ $accentColor32: #040707; $linkColor32: #666; $overrideColor32: #c32627;
+/* Holidays */ $accentColor33: #fff200; $linkColor33: #666; $overrideColor33: #16ac9c;
+/* International Ministries */ $accentColor34: #a62e2c; $linkColor34: #666;
+/* Local Outreach */ $accentColor35: #a62e2c; $linkColor35: #666;
+/* Global Outreach */ $accentColor36: #a62e2c; $linkColor36: #666;
+/* New to B4 */ $accentColor37: #287588; $linkColor37: #666;
+/* New Christian */ $accentColor38: #287588; $linkColor38: #666;
+/* Unassigned */ $accentColor39: #000000; $linkColor39: #666;
 
 /***************************
 *   ALL SCREEN DISPLAYS    *
@@ -61,7 +59,7 @@ h2.pane-title, h2.atmosphere-id {
 	display: none;
 	visibility: hidden;
 }
-
+div.radius img { -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; }
 #content-wrapper {
 	-moz-box-shadow: 6px 0px 10px -7px #333, -6px 0px 10px -7px #333;
 	-webkit-box-shadow: 6px 0px 10px -7px #333, -6px 0px 10px -7px #333;
@@ -69,25 +67,86 @@ h2.pane-title, h2.atmosphere-id {
 	position: relative;
 }
 
-.page-taxonomy-term-13 h2, .page-taxonomy-term-13 .page-title-background /*Rows */ {
- 	color: $accentColor13;
+
+.button {
+	border: 1px solid #000;
+	margin: 0 3px;
+}
+
+.page-taxonomy-term-13 h2, .page-taxonomy-term-13 .page-title-background /* Rows */ {
+ 	color: #000;
  	fill: $accentColor13;
 }
-
-.page-taxonomy-term-14 h2, .page-taxonomy-term-14 .page-title-background /*Circles*/ {
- 	color: $accentColor14;
+.page-taxonomy-term-13 a /* Rows */ {
+ 	color: $linkColor13;
+}
+.page-taxonomy-term-13 .button, .page-taxonomy-term-13 li.button  /* Rows */ {
+	background: none repeat scroll 0 0 $linkColor13;
+	color: #fff;
+}
+.page-taxonomy-term-13 .button, .page-taxonomy-term-13 li.button a /* Rows */ {
+	color: #fff;
+}
+.page-taxonomy-term-13 li.button:hover, li.button a:hover, a:hover, a:active  /* Rows */ {
+	background: none repeat scroll 0 0 $accentColor13;
+	color: #fff;
+}
+.page-taxonomy-term-14 h2, .page-taxonomy-term-14 .page-title-background /* Circles */ {
+ 	color: #000;
  	fill: $accentColor14;
 }
-
-.page-taxonomy-term-15 h2, .page-taxonomy-term-15 .page-title-background /*Paths*/ {
- 	color: $accentColor15;
+.page-taxonomy-term-14 a /* Circles */ {
+ 	color: $linkColor14;
+}
+.page-taxonomy-term-14 .button, .page-taxonomy-term-14 li.button  /* Circles */ {
+	background: none repeat scroll 0 0 $linkColor14;
+	color: #fff;
+}
+.page-taxonomy-term-14 .button, .page-taxonomy-term-14 li.button a /* Circles */ {
+	color: #fff;
+}
+.page-taxonomy-term-14 li.button:hover, li.button a:hover, a:hover, a:active  /* Circles */ {
+	background: none repeat scroll 0 0 $accentColor14;
+	color: #fff;
+}
+.page-taxonomy-term-15 h2, .page-taxonomy-term-15 .page-title-background /* Paths */ {
+ 	color: #000;
  	fill: $accentColor15;
 }
-
-.page-taxonomy-term-16 h2, .page-taxonomy-term-16 .page-title-background /*I'm New*/ {
- 	color: $accentColor16;
+.page-taxonomy-term-15 a /* Paths */ {
+ 	color: $linkColor15;
+}
+.page-taxonomy-term-15 .button, .page-taxonomy-term-15 li.button  /* Paths */ {
+	background: none repeat scroll 0 0 $linkColor15;
+	color: #fff;
+}
+.page-taxonomy-term-15 .button, .page-taxonomy-term-15 li.button a /* Paths */ {
+	color: #fff;
+}
+.page-taxonomy-term-15 li.button:hover, li.button a:hover, a:hover, a:active  /* Paths */ {
+	background: none repeat scroll 0 0 $accentColor15;
+	color: #fff;
+}
+.page-taxonomy-term-16 h2, .page-taxonomy-term-16 .page-title-background /* I'm New */ {
+ 	color: #000;
  	fill: $accentColor16;
 }
+.page-taxonomy-term-16 a /* I'm New */ {
+ 	color: $linkColor16;
+}
+.page-taxonomy-term-16 .button, .page-taxonomy-term-16 li.button  /* I'm New */ {
+	background: none repeat scroll 0 0 $linkColor16;
+	color: #fff;
+}
+.page-taxonomy-term-16 .button, .page-taxonomy-term-16 li.button a /* I'm New */ {
+	color: #fff;
+}
+.page-taxonomy-term-16 li.button:hover, li.button a:hover, a:hover, a:active  /* I'm New */ {
+	background: none repeat scroll 0 0 $accentColor16;
+	color: #fff;
+}
+
+
 
 #sticky-links {
 	background-color: #000;
@@ -95,7 +154,18 @@ h2.pane-title, h2.atmosphere-id {
 	height: 45px;
 	overflow: hidden;
 }
-
+#sticky-links div.block div.view div.view-content ul.no-bullet li.views-row-first {
+	padding: 0 0 0 10px;
+}
+#sticky-links div.block div.view div.view-content ul.no-bullet li.views-row {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+}
+#sticky-links div.block div.view div.view-content ul.no-bullet li.views-row-last {
+	padding: 0 10px 0 0;
+}
 #atmospheric-images {
 	/*position: relative;
 	top: -528px;*/
