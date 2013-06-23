@@ -37,7 +37,7 @@
   <div class="twelve columns hide-for-small">
     <?php // DESKTOP - TABLET START ?>
     <div id="four-things-dt">
-        <object><?php include(path_to_theme()."/images/img_primary-navigation-r3.svg");  ?>
+        <object><?php include(path_to_theme()."/images/img_primary-navigation.svg");  ?>
       </object>
     </div>
     <?php // DESKTOP - TABLET STOP ?>

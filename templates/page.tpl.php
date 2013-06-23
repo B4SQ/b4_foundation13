@@ -29,7 +29,7 @@
 </div>
 <?php // Insert page identity and "the tear" ?>
     <div class="twelve columns">
-<div id="page-deco" class="hide-for-small"><object><?php include(path_to_theme()."/images/page-deco.svg");  ?>
+<div id="page-deco" class="hide-for-small"><object><?php include(path_to_theme()."/images/page-deco-r1.svg");  ?>
       </object></div>
 <div id="page-id-mobile" class="show-for-small"><object><?php include(path_to_theme()."/images/mobile/m_page-identity.svg");  ?>
       </object></div>
