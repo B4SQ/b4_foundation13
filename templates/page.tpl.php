@@ -24,9 +24,11 @@
 <?php endif; ?>
 <?php //Insert logo over atmospheric images ?>
 <div class="row">
-    <div class="twelve columns">
+    <div id="atmosphere-wrppaer" class="twelve columns">
 <div id="atmosphere-logo"><?php print '<img src="'.base_path() . path_to_theme() .'/images/atmosphere-logo.png" width="100%">';  ?></div>
+
 </div>
+
 <?php // Insert page identity and "the tear" ?>
     <div class="twelve columns">
 <div id="page-deco" class="hide-for-small"><object><?php include(path_to_theme()."/images/page-deco-r1.svg");  ?>
@@ -87,14 +89,14 @@
   <?php endif; ?>
 </div>
 <?php if (!empty($page['footer_first']) || !empty($page['footer_middle']) || !empty($page['footer_last'])): ?>
-  <footer class="row">
+  <footer class="twelve columns">
     <?php if (!empty($page['footer_first'])): ?>
-      <div id="footer-first" class="four columns">
+      <div id="footer-first" class="one columns">
         <?php print render($page['footer_first']); ?>
       </div>
     <?php endif; ?>
     <?php if (!empty($page['footer_middle'])): ?>
-      <div id="footer-middle" class="four columns">
+      <div id="footer-middle" class="seven columns">
         <?php print render($page['footer_middle']); ?>
       </div>
     <?php endif; ?>

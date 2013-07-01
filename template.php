@@ -1,4 +1,14 @@
 <?php
+/* function b4_foundation13_preprocess_page(&$variables) {
+  if (!empty($variables['node'])) {
+    $node = $variables['node'];
+    if (!empty($node->field_tags)) {  
+
+      #your taxonomy logic here, if term matches your case then assign it to variable
+      $variables["custom_taxonomy_page_class"];  
+
+    }
+}
 
 /**
  * Implements theme_links() targeting the main menu specifically
@@ -203,4 +213,5 @@
 // Sexy preview buttons
 //function STARTER_form_comment_form_alter(&$form, &$form_state) {
 //  $form['actions']['preview']['#attributes']['class'][] = array('class' => array('secondary', 'button', 'radius'));
+//}
 //}
