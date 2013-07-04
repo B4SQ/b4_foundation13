@@ -59,7 +59,13 @@ h2.pane-title, h2.atmosphere-id {
 	display: none;
 	visibility: hidden;
 }
-div.radius img { -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; }
+div.radius img { 
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+}
 #content-wrapper {
 	-moz-box-shadow: 6px 0px 10px -7px #333, -6px 0px 10px -7px #333;
 	-webkit-box-shadow: 6px 0px 10px -7px #333, -6px 0px 10px -7px #333;
@@ -73,13 +79,19 @@ div.radius img { -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-bord
 	margin: 0 3px;
 }
 #main {
-margin-bottom: 1em;
+	margin-bottom: 1em;
 }
 #sticky-links {
 	background-color: #000;
 	color: #FFF;
-	height: 45px;
+	height: 35px;
 	overflow: hidden;
+}
+#sticky-links div.block div.view div.view-content ul.no-bullet li.views-row div.views-field div.field-content a img {
+	display: inline-block;
+	max-height: 30px;
+	padding-left: 8px;
+	vertical-align: middle;
 }
 #sticky-links div.block div.view div.view-content ul.no-bullet li.views-row-first {
 	padding: 0 0 0 10px;
@@ -199,18 +211,19 @@ background: url(../images/atmosphere-pnp.png);
 body.node-type-photo-gallery div#atmosphere-logo {
 background: url(../images/atmosphere-photogallery.png);
 }
+#branding.hide-for-small {
+margin-top: 1em;
+}
 #page-deco {
 	margin-left: 0px;
 	position: relative;
 }
-
 #page-deco svg /* the entire tear and the circle */ {
 	padding-left: 0px;
 	position: relative;
-	top: -140px;
+	top: -40px;
 	z-index: 0;
 }
-
 .page-title-background /* just the decorative circle */ {
 	display: inline-block;
 }
@@ -223,6 +236,10 @@ h1#page-title {
 .hidden-title h2.node-title, .hidden-title .node-readmore {
 	display: none; 
 	visibility: hidden;
+}
+div#content-wrapper.row div.row div#main.large-12 div.panel-flexible.canvas-panel-wrapper {
+position: relative;
+top: -390px;
 }
 img.field-orbit-image {
  	@include orbitRadius;
@@ -255,7 +272,7 @@ footer.twelve, footer.twelve h2 {
  	color: $linkColor13;
 }
 .page-taxonomy-term-13 .button, .page-taxonomy-term-13 li.button  /* Rows */ {
-	background: none repeat scroll 0 0 $linkColor13;
+	background: $linkColor13;
 	color: #fff;
 }
 .page-taxonomy-term-13 .button, .page-taxonomy-term-13 li.button a /* Rows */ {
@@ -263,7 +280,7 @@ footer.twelve, footer.twelve h2 {
 }
 .page-taxonomy-term-13 li.button:hover, li.button a:hover, a:hover, a:active  /* Rows */ {
 	background: none repeat scroll 0 0 $accentColor13;
-	color: #fff;
+	color: #0ff;
 }
 .page-taxonomy-term-14 h2, .page-taxonomy-term-14 .page-title-background /* Circles */ {
  	color: #000;
@@ -337,7 +354,7 @@ footer.twelve, footer.twelve h2 {
 	background: none repeat scroll 0 0 $accentColor17;
 	color: #fff;
 }
-page-taxonomy-term-18 h2, .page-taxonomy-term-18 .page-title-background /* Men */ {
+.page-taxonomy-term-18 h2, .page-taxonomy-term-18 .page-title-background /* Men */ {
  	color: #000;
  	fill: $accentColor18;
 }
@@ -355,7 +372,7 @@ page-taxonomy-term-18 h2, .page-taxonomy-term-18 .page-title-background /* Men *
 	background: none repeat scroll 0 0 $accentColor18;
 	color: #fff;
 }
-page-taxonomy-term-19 h2, .page-taxonomy-term-19 .page-title-background /* Women */ {
+.page-taxonomy-term-19 h2, .page-taxonomy-term-19 .page-title-background /* Women */ {
  	color: #000;
  	fill: $accentColor19;
 }
@@ -373,7 +390,7 @@ page-taxonomy-term-19 h2, .page-taxonomy-term-19 .page-title-background /* Women
 	background: none repeat scroll 0 0 $accentColor19;
 	color: #fff;
 }
-page-taxonomy-term-20 h2, .page-taxonomy-term-20 .page-title-background /* Young Adults */ {
+.page-taxonomy-term-20 h2, .page-taxonomy-term-20 .page-title-background /* Young Adults */ {
  	color: #000;
  	fill: $accentColor20;
 }
@@ -391,7 +408,7 @@ page-taxonomy-term-20 h2, .page-taxonomy-term-20 .page-title-background /* Young
 	background: none repeat scroll 0 0 $accentColor20;
 	color: #fff;
 }
-page-taxonomy-term-21 h2, .page-taxonomy-term-21 .page-title-background /* Senior Ministries */ {
+.page-taxonomy-term-21 h2, .page-taxonomy-term-21 .page-title-background /* Senior Ministries */ {
  	color: #000;
  	fill: $accentColor21;
 }
@@ -409,7 +426,7 @@ page-taxonomy-term-21 h2, .page-taxonomy-term-21 .page-title-background /* Senio
 	background: none repeat scroll 0 0 $accentColor21;
 	color: #fff;
 }
-page-taxonomy-term-22 h2, .page-taxonomy-term-22 .page-title-background /* Healing & Wholeness */ {
+.page-taxonomy-term-22 h2, .page-taxonomy-term-22 .page-title-background /* Healing & Wholeness */ {
  	color: #000;
  	fill: $accentColor22;
 }
@@ -427,7 +444,7 @@ page-taxonomy-term-22 h2, .page-taxonomy-term-22 .page-title-background /* Heali
 	background: none repeat scroll 0 0 $accentColor22;
 	color: #fff;
 }
-page-taxonomy-term-23 h2, .page-taxonomy-term-23 .page-title-background /* All Children */ {
+.page-taxonomy-term-23 h2, .page-taxonomy-term-23 .page-title-background /* All Children */ {
  	color: #000;
  	fill: $accentColor23;
 }
@@ -445,7 +462,7 @@ page-taxonomy-term-23 h2, .page-taxonomy-term-23 .page-title-background /* All C
 	background: none repeat scroll 0 0 $accentColor23;
 	color: #fff;
 }
-page-taxonomy-term-24 h2, .page-taxonomy-term-24 .page-title-background /* Nursery */ {
+.page-taxonomy-term-24 h2, .page-taxonomy-term-24 .page-title-background /* Nursery */ {
  	color: #000;
  	fill: $accentColor24;
 }
@@ -463,7 +480,7 @@ page-taxonomy-term-24 h2, .page-taxonomy-term-24 .page-title-background /* Nurse
 	background: none repeat scroll 0 0 $accentColor24;
 	color: #fff;
 }
-page-taxonomy-term-25 h2, .page-taxonomy-term-25 .page-title-background /* Early Childhood */ {
+.page-taxonomy-term-25 h2, .page-taxonomy-term-25 .page-title-background /* Early Childhood */ {
  	color: #000;
  	fill: $accentColor25;
 }
@@ -481,7 +498,7 @@ page-taxonomy-term-25 h2, .page-taxonomy-term-25 .page-title-background /* Early
 	background: none repeat scroll 0 0 $accentColor25;
 	color: #fff;
 }
-page-taxonomy-term-26 h2, .page-taxonomy-term-26 .page-title-background /* 1st&2nd */ {
+.page-taxonomy-term-26 h2, .page-taxonomy-term-26 .page-title-background /* 1st&2nd */ {
  	color: #000;
  	fill: $accentColor26;
 }
@@ -499,7 +516,7 @@ page-taxonomy-term-26 h2, .page-taxonomy-term-26 .page-title-background /* 1st&2
 	background: none repeat scroll 0 0 $accentColor26;
 	color: #fff;
 }
-page-taxonomy-term-27 h2, .page-taxonomy-term-27 .page-title-background /* 3rd-5th */ {
+.page-taxonomy-term-27 h2, .page-taxonomy-term-27 .page-title-background /* 3rd-5th */ {
  	color: #000;
  	fill: $accentColor27;
 }
@@ -517,7 +534,7 @@ page-taxonomy-term-27 h2, .page-taxonomy-term-27 .page-title-background /* 3rd-5
 	background: none repeat scroll 0 0 $accentColor27;
 	color: #fff;
 }
-page-taxonomy-term-28 h2, .page-taxonomy-term-28 .page-title-background /* All Youth */ {
+.page-taxonomy-term-28 h2, .page-taxonomy-term-28 .page-title-background /* All Youth */ {
  	color: #000;
  	fill: $accentColor28;
 }
@@ -535,7 +552,7 @@ page-taxonomy-term-28 h2, .page-taxonomy-term-28 .page-title-background /* All Y
 	background: none repeat scroll 0 0 $accentColor28;
 	color: #fff;
 }
-page-taxonomy-term-29 h2, .page-taxonomy-term-29 .page-title-background /* 6th Grade */ {
+.page-taxonomy-term-29 h2, .page-taxonomy-term-29 .page-title-background /* 6th Grade */ {
  	color: #000;
  	fill: $accentColor29;
 }
@@ -553,7 +570,7 @@ page-taxonomy-term-29 h2, .page-taxonomy-term-29 .page-title-background /* 6th G
 	background: none repeat scroll 0 0 $accentColor29;
 	color: #fff;
 }
-page-taxonomy-term-30 h2, .page-taxonomy-term-30 .page-title-background /* Jr. High */ {
+.page-taxonomy-term-30 h2, .page-taxonomy-term-30 .page-title-background /* Jr. High */ {
  	color: #000;
  	fill: $accentColor30;
 }
@@ -571,7 +588,7 @@ page-taxonomy-term-30 h2, .page-taxonomy-term-30 .page-title-background /* Jr. H
 	background: none repeat scroll 0 0 $accentColor30;
 	color: #fff;
 }
-page-taxonomy-term-31 h2, .page-taxonomy-term-31 .page-title-background /* High School */ {
+.page-taxonomy-term-31 h2, .page-taxonomy-term-31 .page-title-background /* High School */ {
  	color: #000;
  	fill: $accentColor31;
 }
@@ -589,7 +606,7 @@ page-taxonomy-term-31 h2, .page-taxonomy-term-31 .page-title-background /* High 
 	background: none repeat scroll 0 0 $accentColor31;
 	color: #fff;
 }
-page-taxonomy-term-32 h2, .page-taxonomy-term-32 .page-title-background /* Camp */ {
+.page-taxonomy-term-32 h2, .page-taxonomy-term-32 .page-title-background /* Camp */ {
  	color: #000;
  	fill: $accentColor32;
 }
@@ -607,7 +624,7 @@ page-taxonomy-term-32 h2, .page-taxonomy-term-32 .page-title-background /* Camp 
 	background: none repeat scroll 0 0 $accentColor32;
 	color: #fff;
 }
-page-taxonomy-term-33 h2, .page-taxonomy-term-33 .page-title-background /* Holidays */ {
+.page-taxonomy-term-33 h2, .page-taxonomy-term-33 .page-title-background /* Holidays */ {
  	color: #000;
  	fill: $accentColor33;
 }
@@ -625,7 +642,7 @@ page-taxonomy-term-33 h2, .page-taxonomy-term-33 .page-title-background /* Holid
 	background: none repeat scroll 0 0 $accentColor33;
 	color: #fff;
 }
-page-taxonomy-term-34 h2, .page-taxonomy-term-34 .page-title-background /* International Ministries */ {
+.page-taxonomy-term-34 h2, .page-taxonomy-term-34 .page-title-background /* International Ministries */ {
  	color: #000;
  	fill: $accentColor34;
 }
@@ -643,7 +660,7 @@ page-taxonomy-term-34 h2, .page-taxonomy-term-34 .page-title-background /* Inter
 	background: none repeat scroll 0 0 $accentColor34;
 	color: #fff;
 }
-page-taxonomy-term-35 h2, .page-taxonomy-term-35 .page-title-background /* Local Outreach */ {
+.page-taxonomy-term-35 h2, .page-taxonomy-term-35 .page-title-background /* Local Outreach */ {
  	color: #000;
  	fill: $accentColor35;
 }
@@ -661,7 +678,7 @@ page-taxonomy-term-35 h2, .page-taxonomy-term-35 .page-title-background /* Local
 	background: none repeat scroll 0 0 $accentColor35;
 	color: #fff;
 }
-page-taxonomy-term-36 h2, .page-taxonomy-term-36 .page-title-background /* Global Outreach */ {
+.page-taxonomy-term-36 h2, .page-taxonomy-term-36 .page-title-background /* Global Outreach */ {
  	color: #000;
  	fill: $accentColor36;
 }
@@ -679,7 +696,7 @@ page-taxonomy-term-36 h2, .page-taxonomy-term-36 .page-title-background /* Globa
 	background: none repeat scroll 0 0 $accentColor36;
 	color: #fff;
 }
-page-taxonomy-term-37 h2, .page-taxonomy-term-37 .page-title-background /* New to B4 */ {
+.page-taxonomy-term-37 h2, .page-taxonomy-term-37 .page-title-background /* New to B4 */ {
  	color: #000;
  	fill: $accentColor37;
 }
@@ -697,7 +714,7 @@ page-taxonomy-term-37 h2, .page-taxonomy-term-37 .page-title-background /* New t
 	background: none repeat scroll 0 0 $accentColor37;
 	color: #fff;
 }
-page-taxonomy-term-38 h2, .page-taxonomy-term-38 .page-title-background /* New to Christianity */ {
+.page-taxonomy-term-38 h2, .page-taxonomy-term-38 .page-title-background /* New to Christianity */ {
  	color: #000;
  	fill: $accentColor38;
 }
@@ -715,7 +732,7 @@ page-taxonomy-term-38 h2, .page-taxonomy-term-38 .page-title-background /* New t
 	background: none repeat scroll 0 0 $accentColor38;
 	color: #fff;
 }
-page-taxonomy-term-39 h2, .page-taxonomy-term-39 .page-title-background /* Unassigned */ {
+.page-taxonomy-term-39 h2, .page-taxonomy-term-39 .page-title-background /* Unassigned */ {
  	color: #000;
  	fill: $accentColor39;
 }
@@ -744,6 +761,9 @@ body {
 
 img.field-orbit-image {
 	@include orbitRadiusMobile;
+}
+#sticky-links {
+	height: 45px;
 }
 }
 
