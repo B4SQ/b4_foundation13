@@ -18,6 +18,7 @@ orbitRadiusMobile {
 /*****************
 *   VARIABLES    *
 ******************/
+/* From B4 Commmunications */
 /* Rows */ $accentColor13: #fcb822; $linkColor13: #666;
 /* Circles */ $accentColor14: #22b24c; $linkColor14: #666;
 /* Paths */ $accentColor15: #a62e2c; $linkColor15: #666;
@@ -254,12 +255,21 @@ img.field-orbit-image {
 	margin: 0 5px 0 0;
 }
 
-footer.twelve, footer.twelve h2 {
+footer.large-12 {
 	background-color: #000;
 	color: #FFF;
 	-moz-box-shadow: 6px 0px 10px -7px #333, -6px 0px 10px -7px #333;
 	-webkit-box-shadow: 6px 0px 10px -7px #333, -6px 0px 10px -7px #333;
 	box-shadow: 6px 0px 10px -7px #333, -6px 0px 10px -7px #333;
+}
+footer.large-12 h2 {
+display: none; 
+visibility: hidden;	
+}
+footer p {
+	font-size: .8em;
+	padding-top: 1em;
+	text-align: center;
 }
 /**************************************
 *   TAXONOMY TERM  BUTTON COLORING    *
@@ -765,6 +775,26 @@ img.field-orbit-image {
 #sticky-links {
 	height: 45px;
 }
+#content-wrapper {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	position: relative;
+}
+#small-four-things h2.block-title {
+display: none; 
+visibility: hidden;
+}
+#small-four-things ul li.button,  button#edit-submit.postfix  {
+background: #535353;
+margin-bottom: 3px;
+}
+#small-four-things ul li.button a {
+color: #FFF;
+	}
+#small-four-things ul li.button:hover, #small-four-things ul li.button:focus, button#edit-submit.postfix {
+background: #000;
+} 
 }
 
 

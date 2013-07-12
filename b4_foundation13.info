@@ -54,6 +54,8 @@ regions[highlighted]     = Highlighted
 regions[content]         = Content
 regions[sidebar_first]   = Left Sidebar
 regions[sidebar_second]  = Right Sidebar
+; Monika added the following region to accomodate an expanadable menu on every page
+regions[expandable_menu] = Expandable Menu
 regions[footer_first]    = Footer first
 regions[footer_middle]   = Footer middle
 regions[footer_last]     = Footer last

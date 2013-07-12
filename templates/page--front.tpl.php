@@ -1,11 +1,11 @@
 <div class="row">
   <?php if ($linked_site_name || $linked_logo): ?>
-    <div class="five columns">
+    <div class="large-5 columns">
       <?php if ($linked_logo): ?>
         <?php print $linked_logo; ?>
       <?php endif; ?>
     </div>
-    <div class="seven columns text-right">
+    <div class="large-7 columns text-right">
       <?php if ($is_front): ?>
         <h1 id="site-name"><?php print $linked_site_name; ?></h1>
       <?php else: ?>
@@ -19,22 +19,22 @@
 
 <?php if (!empty($page['header'])): ?>
   <div class="row">
-    <div class="twelve columns">
+    <div class="large-12 columns">
       <div id="sticky-links"><?php print render($page['header']);?></div>
     </div>
   </div>
 <?php endif; ?>
 <?php // Insert branding ?>
 <div class="row">
-    <div class="twelve columns">
-<div id="branding" class="hide-for-small"><?php print '<img src="'.base_path() . path_to_theme() .'/images/branding.png">';  ?></div>
-<div id="branding-mobile" class="show-for-small"><?php print '<img src="'.base_path() . path_to_theme() .'/images/mobile/m_branding.png">';  ?></div>
+    <div class="large-12 columns">
+<div id="branding" class="hide-for-small"><a href="<?php print $front_page; ?>"><?php print '<img src="'.base_path() . path_to_theme() .'/images/branding.png">';  ?></a></div>
+<div id="branding-mobile" class="show-for-small"><a href="<?php print $front_page; ?>"><?php print '<img src="'.base_path() . path_to_theme() .'/images/mobile/m_branding.png">';  ?></a></div>
 </div>
 </div>
 
 <?php // Insert 4 Things Navigation for Desktop and Tablet ?>
 <div class="row">
-  <div class="twelve columns hide-for-small">
+  <div class="large-12 columns hide-for-small">
     <?php // DESKTOP - TABLET START ?>
     <div id="four-things-dt">
         <object><?php include(path_to_theme()."/images/img_primary-navigation.svg");  ?>
@@ -51,7 +51,7 @@
 
 <?php if ($site_slogan): ?>
   <div class="row">
-    <div class="twelve columns panel radius">
+    <div class="large-12 columns panel radius">
       <?php print $site_slogan; ?>
     </div>
   </div>
@@ -99,13 +99,13 @@
 
 
 <?php if ($main_menu_links || !empty($page['navigation'])): ?>
-  <div class="row">
-    <nav class="twelve columns show-for-small">
-      <?php if (!empty($page['navigation'])): ?>
-        <?php print render($page['navigation']);?>
-      <?php else: ?>
-        <?php print $main_menu_links; ?>
-      <?php endif; ?>
+  <div class="row" id="small-four-things">
+    <nav class="large-12 columns show-for-small">
+      <ul>
+        <li class="small button expand"><a href="/categories/rows">Rows</a></li>
+        <li class="small button expand"><a href="/categories/circles">Circles</a></li>
+        <li class="small button expand"><a href="/categories/paths">Paths</a></li>
+        <li class="small button expand"><a href="/categories/new">I'm New</a></li>
     </nav>
   </div>
 <?php endif; ?>
@@ -113,19 +113,19 @@
 
 
 <?php if (!empty($page['footer_first']) || !empty($page['footer_middle']) || !empty($page['footer_last'])): ?>
-  <footer class="twelve columns">
+  <footer class="large-12 columns">
     <?php if (!empty($page['footer_first'])): ?>
-      <div id="footer-first" class="one columns">
+      <div id="footer-first" class="large-1 columns">
         <?php print render($page['footer_first']); ?>
       </div>
     <?php endif; ?>
     <?php if (!empty($page['footer_middle'])): ?>
-      <div id="footer-middle" class="seven columns">
+      <div id="footer-middle" class="large-7 columns">
         <?php print render($page['footer_middle']); ?>
       </div>
     <?php endif; ?>
     <?php if (!empty($page['footer_last'])): ?>
-      <div id="footer-last" class="four columns">
+      <div id="footer-last" class="large-4 columns">
         <?php print render($page['footer_last']); ?>
       </div>
     <?php endif; ?>
