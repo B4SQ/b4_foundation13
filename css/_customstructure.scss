@@ -11,7 +11,29 @@ body { /*	color: #f00; */
 h1, h2, h3, h4, h5, h6, .proper-name {
 	text-transform: capitalize;
 }
+h1 {
+  font-size: 2.125em;
+}
 
+h2 {
+  font-size: 1.6875em;
+}
+
+h3 {
+  font-size: 1.375em;
+}
+
+h4 {
+  font-size: 1.125em;
+}
+
+h5 {
+  font-size: 1.125em;
+}
+
+h6 {
+  font-size: 1em;
+}
 h2.pane-title, h2.atmosphere-id {
 	display: none;
 	visibility: hidden;
@@ -214,21 +236,29 @@ body.node-type-photo-gallery div#atmosphere-logo {
 	position: relative;
 }
 
-#page-deco svg /* the entire tear and the circle */ {
+#page-deco svg /* the entire tear and the circle and the page title */ {
+	display: inline-block;
 	padding-left: 0px;
 	position: relative;
-	top: -40px;
+	top: -140px;
 	z-index: 0;
 }
-
 .page-title-background /* just the decorative circle */ {
-	display: inline-block;
+display: inline-block;
+max-height: 300px;
+max-width: 300px;
 }
-
+.foreign-object-page-title { /* just the page title */
+display: inline-block;
+max-height: 300px;
+max-width: 300px;
+}
 h1#page-title {
-	color: #CCC;
-	display: inline-block;
-	vertical-align: middle;
+font-size: 2.5em;
+text-align: center;
+margin-top: 40%;
+margin-bottom: 40%;
+z-index: 10;
 }
 
 h2.events-id {
